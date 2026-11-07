@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>User Management System</h2>
+
+        <p>Total Users: <span id="userCount">0</span></p>
+
+        <h3>Register New User</h3>
+
+        <form id="userForm">
+
+            <input type="text" id="name" placeholder="Full Name">
+
+            <input type="email" id="email" placeholder="Email Address">
+
+            <input type="number" id="age" placeholder="Age">
+
+            <button type="submit" id="submitBtn">
+                Register User
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <h3>Search Users</h3>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search by name"
+        >
+
+        <h3>Registered Users</h3>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Registration Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="userList"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <h3>Find User by ID</h3>
+
+<input type="text" id="searchId" placeholder="Enter user ID">
+
+<button type="button" id="findUserBtn">Find User</button>
+
+<div id="singleUser"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Shopping Cart Application</h2>
+
+    <div class="container">
+
+        <h3>Add New Product</h3>
+
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Product Price">
+
+        <button onclick="addProduct()">Add Product</button>
+
+        <h3>Available Products</h3>
+        <div id="products"></div>
+
+        <h3>Shopping Cart</h3>
+        <div id="cart">Your cart is empty</div>
+
+        <hr>
+
+        <p id="subtotal">Subtotal: ₦0</p>
+        <p id="discount">Discount: ₦0</p>
+        <h3 id="total">Total: ₦0</h3>
+
+        <button onclick="checkout()">Checkout</button>
+
+        <div id="summary"></div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

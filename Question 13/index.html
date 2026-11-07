@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Processing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Order Processing System</h2>
+
+        <input
+            type="text"
+            id="product"
+            placeholder="Enter product name"
+        >
+
+        <input
+            type="number"
+            id="quantity"
+            placeholder="Enter quantity"
+            min="1"
+            step="1"
+        >
+
+        <label>
+            <input type="checkbox" id="simulateFailure" checked>
+            Simulate a failed payment
+        </label>
+
+        <button onclick="placeOrder()">Place Order</button>
+
+        <p id="result">Your order status will appear here.</p>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A collection of 15 interactive web development assignments.">
+    <title>Grading | Web Development Assignments</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, sans-serif;
+            color: #172033;
+            background: #f3f6fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            padding: 3.5rem 1.5rem 2.5rem;
+            color: #fff;
+            background: #172554;
+        }
+
+        .intro,
+        main {
+            width: min(100%, 1100px);
+            margin: 0 auto;
+        }
+
+        .intro p {
+            margin: 0 0 0.6rem;
+            color: #bfdbfe;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+        }
+
+        .intro .description {
+            max-width: 38rem;
+            margin: 0.8rem 0 0;
+            color: #e2e8f0;
+            font-size: 1.05rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 1.6;
+            text-transform: none;
+        }
+
+        main {
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        h2 {
+            margin: 0 0 1.2rem;
+            font-size: 1.35rem;
+        }
+
+        .assignments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+            gap: 1rem;
+        }
+
+        .assignment {
+            display: block;
+            min-height: 125px;
+            padding: 1.2rem;
+            border: 1px solid #dbe3ef;
+            border-radius: 12px;
+            color: inherit;
+            background: #fff;
+            text-decoration: none;
+            transition: border-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+        }
+
+        .assignment:hover {
+            transform: translateY(-2px);
+            border-color: #2563eb;
+            box-shadow: 0 8px 20px rgb(23 32 51 / 8%);
+        }
+
+        .assignment:focus-visible {
+            outline: 3px solid #2563eb;
+            outline-offset: 3px;
+        }
+
+        .number {
+            display: block;
+            margin-bottom: 0.65rem;
+            color: #2563eb;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        footer {
+            padding: 1.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <p>Web development coursework</p>
+            <h1>Grading Assignments</h1>
+            <p class="description">Choose an assignment below to open its interactive demo.</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>All assignments</h2>
+        <nav class="assignments" aria-label="Assignments">
+            <a class="assignment" href="./Question%2001/index.html"><span class="number">Assignment 01</span><span class="name">Student Grading System</span></a>
+            <a class="assignment" href="./Question%2002/index.html"><span class="number">Assignment 02</span><span class="name">Employee Salary Calculator</span></a>
+            <a class="assignment" href="./Question%2003/index.html"><span class="number">Assignment 03</span><span class="name">Number Analysis System</span></a>
+            <a class="assignment" href="./Question%2004/Student.html"><span class="number">Assignment 04</span><span class="name">Student Management System</span></a>
+            <a class="assignment" href="./Question%2005/inventory.html"><span class="number">Assignment 05</span><span class="name">Inventory Management System</span></a>
+            <a class="assignment" href="./question%2006/cart.html"><span class="number">Assignment 06</span><span class="name">Shopping Cart</span></a>
+            <a class="assignment" href="./Question%2007/bank.html"><span class="number">Assignment 07</span><span class="name">Bank Account Management</span></a>
+            <a class="assignment" href="./Question%2008/valid.html"><span class="number">Assignment 08</span><span class="name">Password Validation</span></a>
+            <a class="assignment" href="./Question%2009/employee.html"><span class="number">Assignment 09</span><span class="name">Employee Data Processing</span></a>
+            <a class="assignment" href="./Question%2010/error.html"><span class="number">Assignment 10</span><span class="name">User Registration</span></a>
+            <a class="assignment" href="./Question%2011/index.html"><span class="number">Assignment 11</span><span class="name">Math Calculator</span></a>
+            <a class="assignment" href="./Question%2012/index.html"><span class="number">Assignment 12</span><span class="name">JSON User Management</span></a>
+            <a class="assignment" href="./Question%2013/index.html"><span class="number">Assignment 13</span><span class="name">Order Processing System</span></a>
+            <a class="assignment" href="./Question%2014/Index.html"><span class="number">Assignment 14</span><span class="name">Fetch API User System</span></a>
+            <a class="assignment" href="./Question%2015/index.html"><span class="number">Assignment 15</span><span class="name">Mini User Management System</span></a>
+        </nav>
+    </main>
+
+    <footer>15 interactive assignments</footer>
+</body>
+</html>

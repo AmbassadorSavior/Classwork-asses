@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Grading System</h2>
+
+    <form id="studentForm">
+
+        <label>Student Name:</label>
+        <input type="text" id="studentName" required>
+
+        <label>Mathematics:</label>
+        <input type="number" id="math" min="0" max="100" required>
+
+        <label>English:</label>
+        <input type="number" id="english" min="0" max="100" required>
+
+        <label>Biology:</label>
+        <input type="number" id="biology" min="0" max="100" required>
+
+        <label>Chemistry:</label>
+        <input type="number" id="chemistry" min="0" max="100" required>
+
+        <label>Physics:</label>
+        <input type="number" id="physics" min="0" max="100" required>
+
+        <button type="submit">Calculate Result</button>
+
+    </form>
+
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

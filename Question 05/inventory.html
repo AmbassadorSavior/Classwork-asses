@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Inventory Management System</h2>
+
+    <div class="container">
+
+        <h3>Add Product</h3>
+
+        <input type="text" id="productId" placeholder="Product ID">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="number" id="quantity" placeholder="Quantity">
+
+        <button onclick="addProduct()">Add Product</button>
+
+        <h3>Search Product</h3>
+        <input type="text" id="searchId" placeholder="Enter Product ID">
+        <button onclick="searchProduct()">Search</button>
+
+        <p id="searchResult"></p>
+
+        <h3>Update Quantity</h3>
+        <input type="text" id="updateId" placeholder="Product ID">
+        <input type="number" id="newQuantity" placeholder="New Quantity">
+        <button onclick="updateQuantity()">Update</button>
+
+        <h3>Product List</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+
+        <h3 id="totalValue">Total Inventory Value: ₦0</h3>
+
+        <p id="warning"></p>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
